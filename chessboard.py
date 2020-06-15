@@ -2,7 +2,7 @@ import numpy
 import cv2
 
 pattern_size = (9,6)
-square_size = 0.02
+square_size = 0.0245
 
 pattern_points = numpy.zeros( (numpy.prod(pattern_size), 3), numpy.float32 )
 pattern_points[:,:2] = numpy.indices(pattern_size).T.reshape(-1, 2)
