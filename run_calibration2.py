@@ -13,11 +13,12 @@ import yaml
 numpy.set_printoptions(linewidth=300, suppress=True)
 
 folder = '/Users/daniele/work/workspace_python/urx_test/output'
+folder = '/tmp/recoderd_frames/good'
 
 images = sorted(list(Path(folder).glob('*.jpg')))
 poses = sorted(list(Path(folder).glob('*.txt')))
 
-jumps = 100
+jumps = 1
 images = images[::jumps]
 poses = poses[::jumps]
 
